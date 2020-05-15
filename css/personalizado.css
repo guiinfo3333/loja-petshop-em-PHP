@@ -1,0 +1,14 @@
+
+
+#calendar {
+
+	margin: 0 auto;
+	width:700px;
+	height:300px;
+	position:absolute;
+	top:25px;
+	left:20%;
+}
+#calendar tr:hover{
+	background-color:white;
+}

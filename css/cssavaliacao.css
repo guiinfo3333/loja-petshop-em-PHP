@@ -1,0 +1,122 @@
+ textarea{
+            position: relative;
+            width: 350px;
+            height: 75px;
+            top:10px;
+            resize: none;
+            border:none;
+            margin-left:20px;
+            border-radius: 25px;
+            padding:15px;
+            outline: none;
+            background-color: #e8e8ea;
+        }
+        #fotoP{
+            position: relative;
+            width:60px;
+            height: 60px; 
+            border-radius: 50%;
+            transition:all 0.4s ease-out;
+            cursor: pointer;
+            top:10px;
+        }
+        #fotoP:hover{
+            transform:translateX(10px);
+            box-shadow:4px 30px 16px 0px rgba(50,50,50,0.45);
+        }
+        b{
+            position: relative;
+            font-size: 15px;
+            font-family: sans-serif;
+            color:black;
+            bottom:15px;
+            left:10px;
+            top:30px;
+        }
+        fieldset#fiel{
+            width: 650px;
+            height: 170px;
+            border-top:none;
+            border-right:none;
+            border-bottom:none;
+            border-left:2px solid black; 
+            position:relative;
+          left:30px;
+          padding-left: 50px;
+
+        }
+        nav#estrela{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 250px;
+            width: 200px;
+        }
+        input[name="enviar_ava"]{
+            position: relative;
+            float: right;
+            right:100px;
+            border:none;
+            outline: 2px solid #fff89e; 
+            cursor: pointer;
+            bottom:40px;
+
+        }
+        #s1{
+            transition:all 0.4s ease-out;
+        }
+        #s1:hover{
+            transform:translateY(-10px);
+        }
+        #s2{
+            transition:all 0.4s ease-out;
+        }
+        #s2:hover{
+            transform:translateY(-10px);
+        }
+        #s3{
+            transition:all 0.4s ease-out;
+        }
+        #s3:hover{
+            transform:translateY(-10px);
+        }
+        #s4{
+            transition:all 0.4s ease-out;
+        }
+        #s4:hover{
+            transform:translateY(-10px);
+        }
+        #s5{
+            transition:all 0.4s ease-out;
+        }
+        #s5:hover{
+            transform:translateY(-10px);
+        }
+        #name_p{
+            font-family: sans-serif;
+            font-size:15px;
+            color:black;
+            cursor: pointer;
+        }
+        #name_p:hover{
+            font-family: sans-serif;
+            font-size:15px;
+            color:#0012bc;
+            border-bottom:1px solid black;
+        }
+        ul{
+            list-style: none;
+            margin-left: -30px;
+        }
+        ul li{
+            display: inline-block;
+        }
+#oi{
+    position:relative;
+    top:40px;
+    left:69px;
+}
+.ajk{
+    position:relative;
+    top:25px;
+    left:40px;
+}

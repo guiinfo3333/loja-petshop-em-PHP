@@ -1,0 +1,107 @@
+.produto{
+    color: #333;
+    margin-top: 30px;
+}
+
+.produto h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto p{
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.produto legend{
+    display: block;
+    font: bold 0.9em/2.5 sans-serif;
+    text-transform: uppercase;
+}
+
+.comprar{
+    background: #CC6533;
+    border: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.4em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px #777;
+    display: block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.detalhes{
+    padding: 0;
+}
+
+.detalhes h2{
+    font-size: 30px;
+    line-height: 2;
+}
+
+.detalhes p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (min-width: 500px){
+    .detalhes {
+        font-size: 1.2em; 
+    }
+}
+
+.tabela{
+    border-spacing: 0.2em;
+    border-collapse: separate;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+tbody{
+    background-color: transparent;
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td{
+    font-weight: normal;
+    padding: 0.3em 1em;
+    text-align: left;
+    font-size: 12px;
+}
+
+th{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 0;
+}
+
+th table td, td table td {
+    border: 0;
+    border-top: 1px solid #e1e1e1;
+    padding: 2px 5px;
+}
+
+.product-resume{
+    float: right;
+    margin-top: 20px;
+    margin-right: 300px;
+    width: 500px;
+}
+
+.product-resume h1{
+    font-size: 20px;
+}
+
+.checkout {
+    float: right;
+    margin-top: -250px;
+}

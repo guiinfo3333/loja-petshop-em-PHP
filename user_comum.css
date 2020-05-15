@@ -1,0 +1,995 @@
+html, body {
+min-height: 100%; 				
+}
+*{
+margin: 0; 	
+padding:0;			
+}
+
+#conteudoprincipal{
+height: 100%; 	
+position: relative;			
+}
+/*=========================================== INICIO CSS MENU ===========================================================*/
+ul#lista{
+		position: absolute;
+		background-color:#e56a05; 
+		box-shadow: 2px 2px 10px black;
+		top: 50px;
+		width: 100%;
+		z-index: 11;
+	}
+	ul li#botao{
+		display: inline-block;
+		color:white;
+		padding: 5px;
+		cursor: pointer;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-bottom:solid 3px #9dacc4;
+		width:200px;
+		list-style: none;
+		background-color: #e56a05;
+
+	}
+	ul li#botao:hover{
+		background-color: #9dacc4;
+		color:#e56a05;
+		padding: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-bottom:solid 3px #e56a05;	
+	}
+	b#ico{
+		position: relative;
+		display: inline-block;
+		top:-20px;
+		margin-left: 5px;
+	}
+/*=============================================== FIM CSS MENU ===========================================================*/
+
+/*=============================================== CSS DAS TELAS DO MENU ==================================================*/
+#tela1{
+	width: 1500px;
+	height: 800px;
+	top:180px;
+	position: relative;
+	background-color: white;
+	display: block;
+	padding:5px;
+}
+#tela2{
+	width: 1500px;
+	height: 800px;
+	top:180px;
+	position: relative;
+	background-color: white;
+	display: none;
+}
+#tela3{
+	width: 1500px;
+	height: 800px;
+	top:180px;
+	position: relative;
+	background-color: white;
+	display: none;
+}
+.roll{
+		position: relative;
+		overflow: auto;
+		overflow-x: hidden;
+		height:400px;
+		background-color: white;
+	}
+#tela4{
+	width: 1500px;
+	height: 800px;
+	top:180px;
+	position: relative;
+	background-color: white;
+	display: none;
+}
+#tela5{
+	width: 1500px;
+	height: 800px;
+	top:180px;
+	position: relative;
+	background-color: white;
+	display: none;
+}
+/* =========================================================== FIM DO CSS DAS TELAS DO MENU =================================================================== */
+/* ============================================= ÁREA DA PROMOÇÃO NA TELA DE HISCTÓRICO DE COMPRAS =============================================================*/
+
+	#ipromo{
+		list-style: none;
+		width: 80px;
+		height: 90px;
+		cursor: pointer;
+		border-radius:25px;
+		transition:all 0.4s ease-out;
+	}
+	#ipromo:hover{
+		cursor:pointer;
+		transform:translateY(-20px);
+		box-shadow:4px 30px 16px 0px rgba(50,50,50,0.45);	
+	}
+	#capprom{
+		font-family: sans-serif;
+		font-size: 20px;
+		color:#aeaeae;
+	}
+	b#bpromo{
+		color:black;
+		font-family: arial black;
+	}
+	table#tbpromocao{
+		top:20px;
+		color:black;
+		font-family: arial;
+		font-size: 14px;
+		border:none;
+		position: relative;
+		margin-bottom: 30px;
+	}
+	table#tbpromocao td#tdtext{
+		font-size: 12px;
+		color:green;
+		cursor: pointer;
+		padding:5px;
+	}
+	
+ 	.tbcompras td{
+		position: relative;
+		color:black;
+		font-family: arial;
+		font-size: 20px;
+		margin-bottom: 20px;
+		margin-top:10px;
+		padding:15px;
+		border-color: black;
+		cursor: pointer;
+	}
+	/* ======================================================== FIM DA ÁREA DE PROMOÇÃO =========================================================================*/
+
+	/* ============================================= TABELA UNIVERSAL PARA MOSTRAR INFORMAÇÕES =============================================================*/
+
+	.tbinfo{
+		height: 300px;
+		top:20px;
+		color:black;
+		font-family: arial black;
+		border:none;
+		font-size: 14px;
+		float:left;
+		position: relative;
+		margin-bottom: 20px;
+		left:120px;
+	}
+	/* ============================================= FIM TABELA UNIVERSAL PARA MOSTRAR INFORMAÇÕES =============================================================*/
+
+	/* ============================================= DIV E TABELA ESCONDIDAS PARA MOSTRAR INFORMAÇÕES DA COMPRA =================================================*/
+
+	#InfoCompra{
+			background-image: url('ICONES/peg.png');
+			background-repeat: space;
+			position:absolute;
+			top:50px;
+			left:145px;
+			width: 1190px;
+			height: 300px;
+			background-color: rgba(255, 177, 68,0.8);
+			display:none;
+			border-radius:25px;
+			z-index: 10;
+		}
+	.tbIC{
+			width:500px;
+			border:none;
+			position:relative;
+			top:30px;
+			float: left;
+			left:20px;
+	}	
+	/* ============================================= FIM DIV E TABELA ESCONDIDAS PARA MOSTRAR INFORMAÇÕES DA COMPRA ==============================================*/
+
+	/* ============================================= DIV E TABELA ESCONDIDAS PARA ALTERAR MEUS DADOS =============================================================*/
+
+	#Dalterar{
+			background-color: rgba(255, 177, 68,0.8);
+			position:absolute;
+			width: 850px;
+			display:none;
+			left:20px;
+			border-radius:25px;
+			z-index: 10;
+			box-shadow: 3px 3px 6px black;
+			bottom:10px;
+		}
+	.tbalterar{
+			width:500px;
+			border:none;
+			position:relative;
+			top:30px;
+			float: left;
+			left:100px;
+	}	
+	/* ============================================= FIM DIV E TABELA ESCONDIDAS PARA ALTERAR MEUS DADOS  =========================================================*/
+
+	.tbconsultar{
+			border:none;
+			position:relative;
+			top:100px;
+			
+	}	
+	.tbconsultar2{
+			border:none;
+			display: none;
+			position:relative;
+			top:100px;
+	}
+	
+
+	/* ============================================= DIV E TABELA ESCONDIDAS PARA ALTERAR DADOS DO PET =============================================================*/
+	#DalterarPet{
+			position:absolute;
+			width: 850px;
+			height: 310px;
+			background-color: rgba(255, 177, 68,0.8);
+			display:none;
+			left:20px;
+			border-radius:25px;	
+			z-index: 10;
+		}
+	.tbalterarPet{ 
+			width:500px;
+			border:none;
+			position:relative;
+			top:30px;
+			float: left;
+			left:100px;
+		}
+	/* ============================================= FIM DA DIV E TABELA ESCONDIDAS PARA ALTERAR DADOS DO PET =====================================================*/
+
+	/* ============================================= DIV E TABELA ESCONDIDAS PARA ADICIONAR UM NOVO PET ===========================================================*/
+
+		#NovoPet{
+			position:absolute;
+			width: 850px;
+			height: 340px;
+			background-color: rgba(255, 177, 68,0.8);
+			display:none;
+			left:20px;
+			border-radius:25px;
+			z-index: 10;
+		}
+	    .tbnovoPet{
+			width:500px;
+			border:none;
+			position:relative;
+			top:10px;
+			float: left;
+			left:20px;
+		}
+		/* ============================================= FIM DA DIV E TABELA ESCONDIDAS PARA ADICIONAR UM NOVO PET ===============================================*/
+
+		table.tbalterar td{
+			padding:15px;
+	
+		}
+		table.tbnovoPet td{
+			padding:2px;
+	
+		}
+		table.tbalterarPet td{
+			padding:5px;
+	
+		}
+		table.tbCP td{
+			padding:10px;
+		}
+		table.tbconsultar td{
+			padding:10px;
+		}
+	#petalterar{
+		position: relative;
+		width:320px;
+		height: 250px;
+		border:none;		
+		display:none;
+		color:black;
+		font-family: arial black;
+		font-size: 10;
+		border-color:pink;
+		float:left;
+		left:10px;
+		margin-bottom: 0px;
+	}
+	textarea#tarea{
+		height: 50px;
+		width:200px;
+		resize: none;
+	}
+
+	fieldset#fill{
+		width: 650px;
+		bottom:0px;
+		top:10px;
+		border-radius: 10px;
+		border-color: white;
+		display:block;
+		position: relative;
+		height: 350px;
+	}
+	
+	fieldset#fil{
+		position: relative;
+		top:80px;
+		width: 900px;
+		border-radius: 10px;
+		border-color: #9dacc4;
+	}
+	h6#lt{
+		position: relative;
+		margin-left: 0px;
+		font-size: medium;
+		font-family: sans-serif;
+		color:#e56a05;
+		cursor: pointer;
+		width: 235px;
+		top:0px;
+		
+	}
+	h6#lt:hover{
+		margin-left: 0px;
+		font-size: medium;
+		font-family: sans-serif;
+		color:#9dacc4;
+		cursor: pointer;
+		width: 235px;
+		
+	}
+	h6#lt1{
+		position: relative;
+		float:right;
+		right: 15px;
+		font-size: medium;
+		font-family: sans-serif;
+		color:#e56a05;
+		cursor: pointer;
+		width: 235px;
+		top:15px;
+		
+	}
+	h6#lt1:hover{
+		font-size: medium;
+		font-family: sans-serif;
+		color:#9dacc4;
+		cursor: pointer;
+		width: 235px;
+		
+	}
+	/* ===================================== LABEL PARA ALETRAR FOTO DE PERFIL ======================== */
+	input[type="submit"]{
+            position: relative;
+            float: right;
+            right:0px;
+            border:0;
+            color:black;
+            border-bottom: 2px solid #fff89e; 
+            background-color: white;
+            padding:10px;
+            cursor: pointer;
+            bottom:10px;
+}
+        
+         input[type="submit"]:hover{
+            border-bottom: 2px solid black; 
+            cursor: pointer;
+
+        }
+
+		input[type="file"]{
+		width:160px;
+		height:200px;
+		position:relative;
+		float:right;
+		right: 50px;
+		border:solid 1px black;
+		display:none;
+		bottom:10px;
+		top:2px;
+		}
+		#label{
+		width:160px;
+		height:200px;
+		position:relative;
+		float:right;
+		right: 50px;
+		border:solid 1px black;
+		bottom:10px;
+		top:2px;
+		
+		}
+		input[name="file"]{
+		width:160px;
+		height:200px;
+		position:relative;
+		float:right;
+		right: 50px;
+		border:solid 1px white;
+		display:none;
+		bottom:10px;
+		top:25px;
+		}
+		#label0{
+		width:160px;
+		height:200px;
+		position:relative;
+		float:right;
+		right: 50px;
+		border:solid 1px white;
+		bottom:10px;
+		top:25px;
+		
+		}
+	/* ===================================== LABEL PARA ALETRAR FOTO DE PERFIL. FIM ======================== */
+/* ============================================== CSS DO RODAPÉ ========================================================= */
+#rodape {
+position: relative;
+width: 100%;
+bottom:0;
+margin-top: 120px;
+background-color:#e56a05;
+box-shadow: 2px 2px 10px black;
+padding-top:10px;
+padding-bottom:5px;
+
+}
+ul#rodape0{										
+position: relative;
+list-style: none;
+}
+ul#rodape0 li{
+	display: inline-block;
+	margin-left: 15px;
+}
+table#tb tr td{
+	font:13px sans-serif;
+}
+#copy{
+font:11px sans-serif;
+}
+#icone1{
+width: 100px;
+height: 100px;
+border-radius:25px;
+cursor: pointer;
+transition:all 0.4s ease-out;
+}
+#img_perfil{
+position: relative;
+display: inline-block;
+float:right;
+width: 80px;
+height: 80px;	
+}
+#icone1:hover{
+	transform:translateY(-20px);
+	box-shadow:4px 30px 16px 0px rgba(50,50,50,0.45);
+}
+.icone{
+width: 96px;
+height: 96px;
+transition:all 0.4s ease-out;
+border-radius:50%;
+}
+.icone:hover{
+cursor:pointer;
+transform:translateY(-20px);
+box-shadow:4px 30px 16px 0px rgba(50,50,50,0.45);	
+}
+
+ul#ul{
+	position: relative;
+	list-style: none;
+}ul#ul li{
+	width: 90px;
+	display: inline-block;
+	padding:10px;
+	text-align: center;
+	font: 10px sans-serif;
+}
+a:link {
+	text-decoration: none; 
+}
+a:hover {
+	text-decoration: underline;
+	color:black;
+}
+input[name="alterar"]{
+	position: relative;
+	background-color: #FFDEAD;
+	border: 0;
+	border-bottom:solid 3px #9dacc4;
+	color:black;
+	padding: 8px;
+	cursor: pointer;
+	bottom:10px;
+	font-family: arial;
+}
+input[name="alterar"]:hover{
+	background-color: #9dacc4;
+	color:#e56a05;
+	padding: 8px;
+	border-bottom:solid 3px #FFDEAD;
+	
+}
+input[name="fechar"]{
+	position: relative;
+	background-color: #FFDEAD;
+	border: 0;
+	border-bottom:solid 3px #9dacc4;
+	color:black;
+	padding: 8px;
+	cursor: pointer;
+	bottom:10px;
+	font-family: arial;
+}
+input[name="fechar"]:hover{
+	background-color: #9dacc4;
+	color:#e56a05;
+	padding: 8px;
+	border-bottom:solid 3px #FFDEAD;
+}
+input[name="alterarpet"]{
+	position: relative;
+	background-color: #FFDEAD;
+	border: 0;
+	border-bottom:solid 3px #9dacc4;
+	color:black;
+	padding: 8px;
+	cursor: pointer;
+	bottom:0px;
+	font-family: arial;
+}
+input[name="alterarpet"]:hover{
+	background-color: #9dacc4;
+	color:#e56a05;
+	padding: 8px;
+	border-bottom:solid 3px #FFDEAD;
+	
+}
+input[name="fecharpet"]{
+	position: relative;
+	background-color: #FFDEAD;
+	border: 0;
+	border-bottom:solid 3px #9dacc4;
+	color:black;
+	padding: 8px;
+	cursor: pointer;
+	bottom:0px;
+	font-family: arial;
+}
+input[name="fecharpet"]:hover{
+	background-color: #9dacc4;
+	color:#e56a05;
+	padding: 8px;
+	border-bottom:solid 3px #FFDEAD;
+}
+
+input[name="fecharh"]{
+	position: relative;
+	background-color: #FFDEAD;
+	border: 0;
+	border-bottom:solid 3px #9dacc4;
+	color:black;
+	padding: 8px;
+	cursor: pointer;
+	bottom:0px;
+	font-family: arial;
+	float:left;
+	left:0px;
+}
+input[name="fecharh"]:hover{
+	background-color: #9dacc4;
+	color:#e56a05;
+	padding: 8px;
+	border-bottom:solid 3px #FFDEAD;
+}
+
+/* ============================================== FIM DO CSS DO RODAPÉ ========================================================= */
+
+.bn{
+	background-color:#FFDEAD;
+	cursor: pointer;
+	border-bottom:solid 3px #9dacc4;
+	text-align: center;
+}
+.bn:hover{
+	background-color:#9dacc4;
+	border-bottom:solid 3px #FFDEAD;
+	
+}
+.icon_bn{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	float:right;
+	right:30px;
+}
+#icon_bn1{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	bottom:-2px;
+	border-radius: 25%;
+}
+#icon_bn2{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	bottom:-2px;
+	border-radius: 25%;
+}
+#icon_bn3{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	bottom:-2px;
+	border-radius: 25%;
+}
+#icon_bn4{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	bottom:-2px;
+	border-radius: 25%;
+}
+#icon_bn5{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	bottom:-2px;
+	border-radius: 25%;
+}
+
+ul#passos{
+			list-style: none;
+			top:50px;
+			margin:0;		
+		}
+		ul#passos li{
+			display: inline-block;
+			width: 300px;
+		}
+		hr#passo1{
+			height: 10px;
+			border:none;
+		}
+		hr#passo2{
+			height: 10px;
+			border:none;
+		}
+		hr#passo3{
+			height: 10px;
+			border:none;
+		}
+		hr#passo4{
+			height: 10px;
+			border:none;
+		}
+		.iconrd{
+			position: relative;
+			width: 25px;
+			height: 25px;
+			bottom:-5px;
+
+		}
+		#passo01{
+			width: 900px;
+			height: 500px;
+			position: relative;
+			padding:5px;
+			background-color: white;
+			display: block;
+		}
+		#passo02{
+			width: 900px;
+			height: 500px;
+			position: relative;
+			background-color: white;
+			display: none;
+			padding:5px;
+			display:none;
+		}
+		#passo03{
+			width: 900px;
+			height: 500px;
+			position: relative;
+			background-color: white;
+			display: none;
+			padding:5px;
+			display:none;
+		}
+		#passo04{
+			width: 900px;
+			height: 500px;
+			position: relative;
+			background-color: white;
+			display: none;
+			padding:5px;
+			display:none;
+		}
+		#passo05{
+			width: 900px;
+			height: 500px;
+			position: relative;
+			background-color: white;
+			display: block;
+			padding:5px;
+			display:none;
+		}
+		.btt1{
+			position: absolute;
+			vertical-align: bottom;
+			bottom:0px;
+			width: 150px;
+			height: 40px;
+			display: block;
+			background-color:#FFDEAD;
+			border-bottom:solid 3px #9dacc4;
+			margin-top:180px;
+			float:left;
+			left:0px;
+			cursor: pointer;
+		}
+		.btt1:hover{
+			background-color:#9dacc4;
+			border-bottom:solid 3px #FFDEAD;
+		}
+		.btt2{
+			position: absolute;
+			vertical-align: bottom;
+			bottom:0px;
+			width: 150px;
+			height: 40px;
+			display: block;
+			background-color:#FFDEAD;
+			border-bottom:solid 3px #9dacc4;
+			margin-top:180px;
+			float:right;
+			right:0px;
+			cursor: pointer;
+		}
+		.btt2:hover{
+			background-color:#9dacc4;
+			border-bottom:solid 3px #FFDEAD;
+		}
+		.letras{
+			font-size: 15px;
+			color:#515966;
+			font-family: sans-serif;
+			padding:5px;
+			text-decoration: underline;
+		}
+		#finalizar{
+			width: 500px;
+			height: 200px;
+		}
+		input[type="text"]{
+			border-radius: 10px;
+			border:0;
+			width: 200px;
+			padding:5px;
+			background-color: #ffc787;
+		}
+		input[type="email"]{
+			border-radius: 10px;
+			border:0;
+			width: 200px;
+			padding:5px;
+			background-color: #ffc787;
+		}
+		input[type="password"]{
+			border-radius: 10px;
+			border:0;
+			width: 200px;
+			padding:5px;
+			background-color: #ffc787;
+		}
+		button[name="imprimir"]{
+			border:none;
+			font-size: 15px;
+			border-bottom:solid 1px black;
+			border-top:solid 1px black; 
+		}
+		#icon_new{
+			position: relative;
+			top:7px;
+
+		}
+		select[name="select"]{
+			width: 210px;
+			background-color: gray;
+			color:white;
+		}
+		h3#vt{
+		bottom:0px;
+		position: relative;
+		display: inline;
+		float:left;
+		left:0px;
+		font-size:18px;
+		cursor: pointer;
+	}
+	#ico_ajuda{
+		position: relative;
+		bottom:-10px;
+	}
+	#sair{
+		position: relative;
+		float: right;
+		right: 20px;
+		display: block;
+		color:black;
+		cursor: pointer;
+
+	}
+	#sair:hover{
+		position: relative;
+		color:white;
+		cursor: pointer;
+
+	}
+	#icon_sair{
+		position: relative;
+		width: 32px;
+		height: 32px;
+		top:10px;
+	}
+	#tbAvaliacao{
+		position: relative;
+		width: 1000px;
+	}
+	#alt{
+		position: relative;
+		top:10px;
+		width: 800px;
+		background-color: rgb(155, 154, 153,0.7);
+		display:none;
+	}
+	 textarea#txt_ava{
+            position: relative;
+            width: 350px;
+            height: 25px;
+            top:10px;
+            resize: none;
+            border:none;
+            margin-left:20px;
+            border-radius: 25px;
+            padding:15px;
+            outline: none;
+            background-color: #e8e8ea;
+        }
+        #fotoP_ava{
+            position: relative;
+            width:60px;
+            height: 60px; 
+            border-radius: 50%;
+            transition:all 0.4s ease-out;
+            cursor: pointer;
+            top:10px;
+        }
+        #fotoP_ava:hover{
+            transform:translateX(10px);
+            box-shadow:4px 30px 16px 0px rgba(50,50,50,0.45);
+        }
+        
+        fieldset#fiel_ava{
+            width: 650px;
+            height: 170px;
+            border-top:none;
+            border-right:none;
+            border-bottom:none;
+            border-left:2px solid black; 
+
+        }
+        nav#estrela_ava{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 250px;
+            width: 200px;
+        }
+        input[name="enviar_ava"]{
+            position: relative;
+            float: left;
+            left:25px;
+            color:black;
+            border:0;
+            border-bottom: 2px solid #fff89e; 
+            background-color: white;
+            cursor: pointer;
+            bottom:0px;
+
+        }
+         input[name="enviar_ava"]:hover{
+            border-bottom: 2px solid black; 
+            cursor: pointer;
+
+        }
+         input[name="fechar_ava"]{
+            position: relative;
+            float: right;
+            right:0px;
+            border:0;
+            color:black;
+            border-bottom: 2px solid #fff89e; 
+            background-color: white;
+            padding:10px;
+            cursor: pointer;
+            bottom:0px;
+
+        }
+         input[name="fechar_ava"]:hover{
+            border-bottom: 2px solid black; 
+            cursor: pointer;
+
+        }
+        #s1{
+            transition:all 0.4s ease-out;
+        }
+        #s1:hover{
+            transform:translateY(-10px);
+        }
+        #s2{
+            transition:all 0.4s ease-out;
+        }
+        #s2:hover{
+            transform:translateY(-10px);
+        }
+        #s3{
+            transition:all 0.4s ease-out;
+        }
+        #s3:hover{
+            transform:translateY(-10px);
+        }
+        #s4{
+            transition:all 0.4s ease-out;
+        }
+        #s4:hover{
+            transform:translateY(-10px);
+        }
+        #s5{
+            transition:all 0.4s ease-out;
+        }
+        #s5:hover{
+            transform:translateY(-10px);
+        }
+        b#name_ava{
+        	position: relative;
+            font-family: sans-serif;
+            font-size:15px;
+            color:black;
+            cursor: pointer;
+            bottom:15px;
+        }
+        b#name_ava:hover{
+            font-family: sans-serif;
+            font-size:15px;
+            color:#0012bc;
+            border-bottom:1px solid black;
+        }
+        ul#list_ava{
+            list-style: none;
+            margin-left: -30px;
+        }
+        ul#list_ava li{
+            display: inline-block;
+        }
+        b#abrir_alt{
+        	cursor: pointer;
+        }
+        b#abrir_alt:hover{
+        	background-color: #c1c1c1;
+        }
+	

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+hr{
+    color: #e1e1e1;
+}
+
+/* Cabeçalho */
+ 
+@media (max-width: 1199px)
+.main-header .search {
+    width: 24%;
+}
+.main-header .search {
+    float: left;
+    width: 45%;
+    margin-top: 2px;
+}
+
+.search {
+    display: block;
+    width: 0%;
+    text-align: left;
+    position: relative;
+    height: 44px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.search form {
+    margin-bottom: 0;
+    position: relative;
+    left:120px;
+}
+
+.search form .icon-search {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.6rem;
+    color: #ccc;
+    padding: .5rem 1.4rem;
+    margin-bottom: 0;
+}
+
+.icon-search:before {
+    content: "?";
+}
+
+.header-menu {
+    position: absolute;
+    top: .7rem;
+    right: 9rem;
+}
+ 
+.main-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color:#e56a05;
+    text-align: center;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+.container.container-limited {
+    padding: 0 3rem;
+    min-width: 1024px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.container:before{
+    content: " ";
+    display: table;
+}
+
+.main-header .logo {
+    line-height: 0;
+    padding: 1rem 0;
+    margin: 0 5rem 1.1rem 0;
+    float: left;
+    margin-top: 3px;
+}
+
+.header-menu .item-header {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    left:40px;
+}
+@media (max-width: 991px) and (min-width: 768px)
+.hidden-sm {
+    display: none!important;
+}
+
+.home ul {
+    list-style: none;
+}
+
+.main-header ul {
+    list-style: none;
+}
+
+.header-menu .title {
+    color: #fff;
+    display: block;
+    padding: 15px 5px 15px 20px;
+}
+
+.title:hover{
+    background-color: transparent;
+}
+
+dd, dt, li {
+    margin: 0;
+}
+
+.icon-xs {
+    font-size: 16;
+    font-weight: 600;
+    height: 15px;
+    line-height: 17px;
+}
+
+[class^=icon-] {
+    display: inline-block;
+}
+
+.main-header a {
+    text-decoration: none;
+}
+/* Fim do Cabeçalho */
+
+/* Menu */
+
+.menu-nav{
+    /*position:fixed;*/
+    z-index:3;
+    list-style-type: none;
+    font-family:'Arial', 'Sans-serif';
+    font-weight: 600;
+    margin: 0;
+    padding: 0 1rem 0 9rem;
+    overflow: hidden;
+    background-color:#f2a868;
+    /*width:100%;*/
+}
+
+ul{
+ 
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+li a:hover, .nav-dropdown:hover .dropbtn {
+    background-color: white;
+    color: #942;
+    text-decoration: none;
+}
+
+li.nav-dropdown {
+    display: inline-block;
+    padding-left:100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 260px;
+    min-height: 400px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #666;
+    font-size: 12px;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: white;
+    color: #c65;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-panel .item .submenu-image {
+    position: absolute;
+    top: .5rem;
+    left: 1.5rem;
+    max-width: 37px;
+    max-height: 37px;
+}
+
+img {
+    border-style: none;
+}
+ #imageshow{
+        width:250px;
+
+    }
+.seta {
+    position: relative;
+    float: right;
+}
+
+.seta-image{
+    position: relative;
+    top: 1rem;
+    float: right;
+}
+
+.menu-brand {
+    padding: 1rem;
+    width: 560px;
+    min-height: 400px;
+    background-color: white;
+}
+
+.menu-brand .menu-brand-main {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 1rem;
+}
+
+.menu-brand .menu-brand-children ul {
+    width: 115px;
+    float: left;
+    font-weight: normal;
+    background-color: #e1e1e1;
+}
+
+.menu-brand .menu-brand-children ul:hover {
+    font-weight: normal;
+}
+
+.menu-brand .menu-brand-names {
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+
+/* Fim do Menu*/
+
+/* configuração da Sidebar */
+
+.row-banner{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.box-hero {
+    min-height: 220px;
+    margin: 0rem 0;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+.box-hero .banner-side {
+    float: left;
+    float: left;
+    width: 27.4%;
+    margin-left: 1%;
+}
+
+.box-hero .banner-side img {
+    width: 100%;
+}
+
+.container:after, .row:after {
+    clear: both;
+}
+
+.container:after, .container:before, .row-banner:after, .row-banner:before {
+    content: " ";
+    display: table;
+}
+/*configuração produtos */
+
+.painel {
+    margin: 50px 0;
+    padding: 20px;
+    width: 1200px;
+    margin-left: 130px;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin-left: 10px;
+    padding-bottom: 80px;
+    margin-right:120px;
+    /*border:1px solid black;*/
+}
+
+.painel h2{
+    font: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    margin-bottom: 20px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.painel a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.painel li:hover{
+    background-color: transparent;
+    box-shadow: 0 0 5px transparent;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.novidades {
+    float: left;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.variados{
+    float: left;
+    background-color: rgba(253,253,253, 0.1);
+}
+
+
+
+/* Configuração do Footer */
+
+footer{
+    top:1300px;
+    height:300px;
+    position:relative;
+    background-color:#f47a42;
+    font-family:'Arial';
+    color:white;
+    text-align:center;
+    
+}
+.logostarrodape{
+     width: 200px;
+    height: 150px;
+}
+.inforodape ul li{
+    font-weight:bold;
+    padding-top: 22px;
+    padding-bottom:10px;
+}
+#idlogrod{
+    position:relative;
+    top:10px;
+    width:100px;
+    height:90px;
+}
+#contato{
+    left:100px;
+    top:30px;
+    position:absolute;
+    float:left;
+}
+#contato ul{
+    list-style:none;
+}
+#redes{
+    position:absolute;
+    top:10px;
+    right:50px;
+    float:right;
+}
+#redes ul{
+    list-style:none;
+}
+.rede1{
+    width:70px;
+    height:60px;
+}
+#redes ul li{
+    padding-top:10px; 
+
+}
+#rs{
+font-size:20px;
+}
+
+/* Fim do Rodapé*/
+
+.botao{
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 17px;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.botao-primario{
+    color: #fff;
+    background-color: #cc6533;
+    border-color: #cc6533;
+    border-radius: 5px;
+}
+
+.botao-primario:hover{
+    color: #fff;
+    background-color: #a04f28;
+    border-color: #a04f28;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ajlegal{
+    margin-left:140px;
+}

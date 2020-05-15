@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+header{
+	width: 100%;
+	height: 144px;
+	float: left;
+	background-color: #fff;
+}
+
+header#topo{
+	width: 1120px;
+	height: 144px;
+	margin: 0 auto;
+}
+
+#logo{
+	width: 187px;
+	height: 146px;
+	float: left;
+	margin-left: 230px;
+	margin-top: 5px;
+}
+
+#topo-right{
+	width: 1120px;
+	height: 146px;
+	float: right;
+	margin-right: 20px;
+    margin-top: 90px;
+    position: relative;
+}
+
+#topo-right img{
+	padding: 0;
+	margin-right: 70px;
+	float: left;
+}
+
+#topo-right a{
+	padding: 5px;
+	margin-right: 50px;
+    margin-left: -50px;
+	float: left;
+    text-decoration: none;
+}
+
+#topo-right #busca-organica{
+	width: 346px;
+	height: 46px;
+	border: 10px;
+	background: #fff;
+	margin-right: 100px;
+    margin-top: -80px;
+	float: left;
+	box-shadow: inset 0px 0px 2px 1px #d9d9d9;
+	font-family: sans-serif;
+	color: #9e9e9e;
+	text-align: left;
+	padding: 0px 10px 0px 10px;
+}
+
+/* Menu */
+
+#menu {
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: #cc6533;
+}
+
+#menu nav{
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+}
+
+nav ul#menu-screen{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+nav ul#menu-screen li{
+    width: 100px;
+    height: auto;
+    display: inline;
+    padding: 15px 15px 16px 15px;
+    float: left;
+    margin-left: 0px;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul#menu-screen li.first-child{
+    width: 150px;
+    height: 19px;
+}
+
+nav ul#menu-screen li:hover{
+    background-color: #fff;
+    color: #cc6533;
+    cursor: pointer;
+}
+
+nav ul#menu-screen li ul{
+    display: none;
+}
+
+nav ul#menu-screen li:hover ul{
+    display: block;
+    padding: 7px;
+    width: 1080;
+    height: auto;
+    margin-top: 13px;
+    margin-left: -16px;
+    background-color: rgba(255,255,255,0);
+    float: left;
+    box-shadow: 0px 2px 4px 1px #ccc;
+    position: relative;
+    z-index: 3;
+}
+
+nav ul#menu-screen li:hover ul li{
+    width: 220px;
+    height: auto;
+    color: #666;
+    padding: 7px 15px 7px 15px;;
+    text-align: left;
+    margin-top: 5px;
+    display: block;
+}
+
+nav ul#menu-screen li:hover ul li:hover{
+    background-color: rgba(255,255,255,0.4);
+    color:  rgba(204,104,51,1);
+}
+
+/* Conteudo */
+
+main{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+section#content{
+    width: 1120px;
+    height: auto;
+    margin: 0 auto;
+}
+
+section#conteudo{
+    width: 700px;
+    height: auto;
+    float: left;
+}
+
+

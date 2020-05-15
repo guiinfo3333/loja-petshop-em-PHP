@@ -1,0 +1,219 @@
+li.nav-dropdown {
+    display: inline-block;
+    padding-left:100px;
+}
+footer{
+    top:0px;
+    height:300px;
+    position:relative;
+    background-color:#f47a42;
+    font-family:'Arial';
+    color:white;
+    text-align:center;
+    }
+    #end{
+        position:absolute;
+        top:0px;
+        left:280px;
+        /*border:1px solid white;*/
+        display:block;
+
+    }
+    #end ul li{
+        position:relative;
+        display:flex;
+        padding-top:60px;
+        padding-left:158px;
+    }
+   /* #end ul li:nth-child(4){
+         padding-left:170px;
+    }*/
+.logostarrodape{
+     width: 200px;
+    height: 150px;}
+.inforodape ul li{
+    font-weight:bold;
+    padding-top: 22px;
+    padding-bottom:10px;}
+#idlogrod{
+    position:relative;
+    top:10px;
+    width:100px;
+    left:-130px;
+    height:90px;}
+#contato{
+    left:100px;
+    top:30px;
+    position:absolute;
+    float:left;
+    /*border:1px solid black;*/
+}
+#contato ul{
+    list-style:none;
+}
+
+    #contato ul li{
+   display:block;
+   /*border-right:1px solid white;*/
+}
+#redes{
+    position:relative;
+    top:60px;
+    right:0px;
+    float:right;}
+#redes ul{
+    list-style:none;
+    display:block;
+}
+.rede1{
+    width:70px;
+    height:60px;}
+    .rede1:hover{
+        transform: scale(0.7);
+        cursor:pointer;
+    }
+#redes ul li{ 
+    padding-top:10px; 
+    padding-right:30px;
+    padding-left:10px;
+    display:inline;
+}#rs{
+font-size:20px;
+}
+#logostar{
+    position:absolute;
+    width:200px;
+    height:110px;
+    float:left;
+    left:-100px;
+    top:0px;
+    /*border:1px solid black;*/
+}
+#fotousu{
+     top:-40px;
+    border:3px solid black;
+    width:50px;
+    height:50px;
+    float:right;
+   position:relative;
+    right:15px;
+    background-size:cover;
+    border-radius:13px;
+    background-image:url('img1/usuario.png');
+    background-color: white;
+
+}
+#fotousui{
+    position:absolute;
+    top:50px;
+    left:760px;
+}
+/*#fotousui #menulog{
+  display:block;
+position:relative;
+top:50px;
+width:200px;
+right:100px;
+z-index:60;
+left:-150px;
+text-align: center;
+list-style:none;
+}*/
+#fotousui  #menulogi{
+    display:none;
+}
+#fotousui  #menulogi li{
+    display:block;
+background-color:rgb(35, 40, 48,.6);
+  float:right;
+  width:200px;
+  font-weight:bold;
+}
+#fotousui #menulogi li a:hover{
+color:blue;
+
+}
+#fotousui  #menulogi li a{
+
+ width:200px;
+  text-decoration:none;
+}
+#fotousu  #menulog{
+  display:none;
+position:relative;
+top:50px;
+width:200px;
+right:100px;
+z-index:60;
+left:-150px;
+text-align: center;
+list-style:none;
+}
+#fotousu  #menulog li{
+background-color:black;
+  float:right;
+  width:200px;
+}
+#fotousu #menulog li a:hover{
+color:blue;
+
+}
+#fotousu  #menulog li a{
+
+ width:200px;
+  text-decoration:none;
+}
+#nomeusu{
+    top:-5px;
+    position:absolute;
+    left:-100px;
+    font-family:arial;
+    font-size:18px;
+}
+.data{
+    top:0px;
+    left:-180px;
+    width:70px;
+    height:70px;
+    position:absolute;
+    animation-name:data;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+
+}
+.data:hover{
+    animation-play-state:paused;
+    background-color:#a7bee2;
+}
+@keyframes data{
+0%{
+ transform: rotate(15deg);
+}
+50%{
+transform: rotate(180deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
+#starpet{
+        position:absolute;
+        font-size:22px;
+        left:120px;
+        font-family:arial;
+        color:white;
+        text-shadow:3px 4px 6px black;
+    }
+    .title{
+        cursor:pointer;
+    }
+    #disbo1{
+         padding-left:168px;
+         left:50px;
+    }
+    #cali{
+left:15px;
+position:relative;
+
+    }
